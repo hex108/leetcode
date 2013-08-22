@@ -9,7 +9,7 @@ CODE_NAME=$1
 
 mkdir $CODE_NAME
 
-cp template/test.h $CODE_NAME/$CODE_NAME.h
+cp template/test_file.h $CODE_NAME/$CODE_NAME.h
 
 cp template/test.cpp $CODE_NAME/test.cpp
 sed -i "s/TEST_FILE_H/$CODE_NAME\.h/" $CODE_NAME/test.cpp
