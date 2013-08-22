@@ -18,7 +18,9 @@ e.g. Palindrome Palindrome II; Distinct Subsequences.
 
 ## Palindrome Partitioning II
 Write programe more effectively. It *matters*.
+
 e.g.
+
     for(size_t i = 0; i < need_cut.size(); i ++){
         if(isPalindrome(s, need_cut[i], len - 1)){
             return n; 
@@ -31,7 +33,9 @@ e.g.
             }
         }
     }
+    
 =>
+
     for(size_t i = 0; i < need_cut.size(); i ++){
         if(isPalindrome(s, need_cut[i], len - 1)){
             return n; 
