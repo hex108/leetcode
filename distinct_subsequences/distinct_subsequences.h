@@ -40,11 +40,11 @@ class Solution {
     }
 public:
     int numDistinct(string S, string T) {
-        if(S.size() == 0)
-            return 0;
-
         if(T.size() == 0)
             return -1;
+
+        if(S.size() == 0)
+            return 0;
 
         record.clear();
         vector<int> tmp(T.size(), -1);
