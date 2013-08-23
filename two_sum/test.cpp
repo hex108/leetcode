@@ -14,15 +14,17 @@ int main()
     Solution solution;
     
     //Test cases
+    vector<int> numbers;
+
     int a[] = {2, 7, 11, 15};
-    vector<int> numbers(a, a + sizeof(a) / sizeof(a[0]));
+    INT_ARR_TO_VEC(numbers, a);
     int target = 9;
     print_vector(solution.twoSum(numbers, target));
 	
     int b[] = {9, 2, 5, 3, 4, 7};
-    vector<int> numbers2(b, b + sizeof(b) / sizeof(b[0]));
+    INT_ARR_TO_VEC(numbers, b);
     target = 9;
-    print_vector(solution.twoSum(numbers2, target));
+    print_vector(solution.twoSum(numbers, target));
 	
     //Error test cases from leetcode.com
 	
