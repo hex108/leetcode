@@ -5,7 +5,7 @@
 #include <algorithm>
 
 #include "test.h"
-#include "path_sum.h"
+#include "path_sum_2.h"
 
 using namespace std;
 
@@ -33,11 +33,13 @@ int main()
     t4.left = &t7;
     t4.right = &t8;
 
-    TreeNode t9(1);
-    t6.right = &t9;
+    TreeNode t9(5);
+    TreeNode t10(1);
+    t6.left = &t9;
+    t6.right = &t10;
 
-    cout << solution.hasPathSum(&t1, 22) << endl;	
-    cout << solution.hasPathSum(&t1, 80) << endl;	
+    print_vector_vector(solution.pathSum(&t1, 22));
+    print_vector_vector(solution.pathSum(&t1, 80));
 
     //Error test cases from leetcode.com
 	
