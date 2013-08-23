@@ -9,24 +9,26 @@
 
 using namespace std;
 
-void print_vector(vector<string> v){
+template <typename T>
+void print_vector(vector<T> v){
     cout << "["; 
 
     bool first = true;
 
-    for(vector<string>::iterator iter = v.begin(); iter != v.end(); iter ++){
+    for(typename vector<T>::iterator iter = v.begin(); iter != v.end(); iter ++){
         if(!first)
             cout << ", ";
         first = false;
 
-        cout << "\"" << *iter << "\"";
+        cout << *iter;
     }
     cout << "]," << endl;
 }
 
-void print_vector_vector(vector<vector<string> > v) {
+template <typename T>
+void print_vector_vector(vector<vector<T> > v) {
     cout << "{" << endl;
-    for(vector<vector<string> >::iterator iter = v.begin(); iter != v.end(); iter ++){
+    for(typename vector<vector<T> >::iterator iter = v.begin(); iter != v.end(); iter ++){
         cout << "\t";
         print_vector(*iter);
     }

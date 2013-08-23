@@ -14,6 +14,11 @@ Record values that need computed many times. It could change the complexity of t
 
 e.g. Palindrome Palindrome II; Distinct Subsequences; Edit Distance.
 
+### Hash
+Hash is very very helpful. It could save much time.
+
+e.g. Two Sum.
+
 # Specific problems
 
 ## Palindrome Partitioning II
