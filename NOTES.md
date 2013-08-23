@@ -6,13 +6,13 @@
 * Split the problem to smaller problem
   Split it to smaller problem. But how to split is also a problem. 
   
-  e.g. "Palindrome Palindrome II".
+  e.g. Palindrome Palindrome II.
 
 ## How to make programe faster?
 ### Record
-Record values that need computed many times. It could change the complexity of the algorithm.
+Record values that need computed many times. It could change the complexity of the algorithm. If not using record, it will exceed time limit.
 
-e.g. Palindrome Palindrome II; Distinct Subsequences. 
+e.g. Palindrome Palindrome II; Distinct Subsequences; Edit Distance.
 
 # Specific problems
 
