@@ -9,6 +9,12 @@
 
 using namespace std;
 
+// Assigin an int array 'arr' to vector<int> 'vec'
+#define INT_ARR_TO_VEC(vec, arr)  {\
+    vec.clear(); \
+    vec.insert(vec.end(), arr, arr + sizeof(arr) / sizeof(arr[0]));\
+}
+
 template <typename T>
 void print_vector(vector<T> v){
     cout << "["; 

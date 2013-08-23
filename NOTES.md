@@ -17,7 +17,7 @@ e.g. Palindrome Palindrome II; Distinct Subsequences; Edit Distance.
 ### Hash
 Hash is very very helpful. It could save much time.
 
-e.g. Two Sum.
+e.g. Two Sum; Longest Consecutive Sequence.
 
 # Specific problems
 
@@ -56,3 +56,6 @@ e.g.
             }
         }
     }
+    
+## Longest Consecutive Sequence
+I usually use bit map to solve the problem. And I have already recognized the solution will be very inefficient when the range of the element in the array is very large, e.g. {-200000, 200000}. Today I think I could use map to solve it suddenly. Finally I solve the problem. What a big surprise!
