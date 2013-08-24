@@ -17,6 +17,9 @@ Record values that need computed many times. It could change the complexity of t
 
 e.g. Palindrome Palindrome II; Distinct Subsequences; Edit Distance.
 
+*But* we should implement it effecively.
+e.g. Interleaving String.
+
 ### Hash
 Hash is very very helpful. It could save much time.
 
@@ -62,3 +65,6 @@ e.g.
     
 ## Longest Consecutive Sequence
 I usually use bit map to solve the problem. And I have already recognized the solution will be very inefficient when the range of the element in the array is very large, e.g. {-200000, 200000}. Today I think I could use map to solve it suddenly. Finally I solve the problem. What a big surprise!
+
+## Interleaving String
+Implement record effectively. According to index1 and index2, we could get index3 because the equation `(s1.size() - index1 + 1 + s2.size() - index2 + 1) == (s3.size() - index3 + 1)` must be true. So we could use `recored[index1][index2]` instead of `record[index1][index2][index3]` to record.
