@@ -41,4 +41,18 @@ void print_vector_vector(vector<vector<T> > v) {
     cout << "}" << endl;
 }
 
+template <typename T>
+void print_arr(T arr[], int n){
+    cout << "[";
+
+    for(int i = 0; i < n - 1; i ++){
+        cout << arr[i] << ", ";
+    }
+    
+    if(n >= 1)
+        cout << arr[n - 1];
+    
+    cout << "]" << endl;
+}
+
 #endif

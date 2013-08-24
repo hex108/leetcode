@@ -68,3 +68,6 @@ I usually use bit map to solve the problem. And I have already recognized the so
 
 ## Interleaving String
 Implement record effectively. According to index1 and index2, we could get index3 because the equation `(s1.size() - index1 + s2.size() - index2) == (s3.size() - index3)` must be true. So we could use `recored[index1][index2]` instead of `record[index1][index2][index3]` to record.
+
+## Merge Sorted Array
+Classify every situation, e.g. m == 0, n == 0.
