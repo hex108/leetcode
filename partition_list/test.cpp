@@ -9,15 +9,6 @@
 
 using namespace std;
 
-void print_list_node(ListNode *head){
-    cout << "{";
-    while(head){
-        cout << head->val << ", ";
-        head = head->next;
-    }
-    cout << "}" << endl;
-}
-
 int main()
 {
     Solution solution;

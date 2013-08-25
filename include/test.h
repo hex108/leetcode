@@ -55,4 +55,28 @@ void print_arr(T arr[], int n){
     cout << "]" << endl;
 }
 
+/*  ListNode related 
+ */
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode(int x) : val(x), next(NULL) {}
+};
+
+void print_list_node(ListNode *head){
+    cout << "{";
+    bool first = true;
+
+    while(head){
+        if(first == false){
+            cout << ", " << head->val;
+        }else{
+            cout << head->val;
+            first = false;
+        }
+        head = head->next;
+    }
+    cout << "}" << endl;
+}
+
 #endif
