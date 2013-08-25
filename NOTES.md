@@ -1,4 +1,5 @@
 # Some thought about algorithm
+*Algorithm* is important, and *implementation* is also very important(e.g. Partition List).
 
 ## How to analyze problemom
 ### Understand the problem
@@ -71,3 +72,6 @@ Implement record effectively. According to index1 and index2, we could get index
 
 ## Merge Sorted Array
 Classify every situation, e.g. m == 0, n == 0.
+
+## Partition List
+It is very senstive to the effective implementation of every operation, not just complexity of algorithm.
