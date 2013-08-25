@@ -75,3 +75,6 @@ Classify every situation, e.g. m == 0, n == 0.
 
 ## Partition List
 It is very senstive to the effective implementation of every operation, not just complexity of algorithm.
+
+## Remove Duplicates From Sorted List II
+Use a dummy node and set its member 'next' point to head. It is one of questions in my interview one year ago.
