@@ -19,3 +19,4 @@ cp template/Makefile $CODE_NAME/Makefile
 REAL_NAME=$(echo $CODE_NAME | sed -e 's/_/ /g' -e 's/\b[a-z]/\U&/g' -e 's/\b2\b/II/g')
 
 echo $(date +"%D %H:%M") $REAL_NAME >> PROGRESS.md
+echo "" >> PROGRESS.md
