@@ -26,6 +26,10 @@ Hash is very very helpful. It could save much time.
 
 e.g. Two Sum; Longest Consecutive Sequence.
 
+## Tricks
+### Fast and slow pointer
+Currently, it has been used in rotating list and checking whether a chain list is a loop, e.g. Rotate List.
+
 # Specific problems
 
 ## Palindrome Partitioning II
