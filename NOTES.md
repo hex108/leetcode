@@ -28,7 +28,7 @@ e.g. Two Sum; Longest Consecutive Sequence.
 
 ## Tricks
 ### Fast and slow pointer
-Currently, it has been used in rotating list and checking whether a chain list is a loop, e.g. Rotate List.
+Currently, it has been used in rotating list and checking whether a chain list is a loop, e.g. Rotate List; Remove Nth Node From End Of List.
 
 # Specific problems
 
