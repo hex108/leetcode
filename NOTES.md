@@ -30,6 +30,9 @@ e.g. Two Sum; Longest Consecutive Sequence.
 ### Fast and slow pointer
 Currently, it has been used in rotating list and checking whether a chain list is a loop, e.g. Rotate List; Remove Nth Node From End Of List.
 
+### Dummy node
+It is useful when you might delete the head of a node list, e.g. Reverse Linked List II; Remove Duplicates From Sorted List II.
+
 # Specific problems
 
 ## Palindrome Partitioning II
