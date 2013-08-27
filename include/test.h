@@ -56,8 +56,7 @@ void print_arr(T arr[], int n){
     cout << "]" << endl;
 }
 
-/*  ListNode related 
- */
+// ListNode related 
 struct ListNode {
     int val;
     ListNode *next;
@@ -78,6 +77,19 @@ void print_list_node(ListNode *head){
         head = head->next;
     }
     cout << "}" << endl;
+}
+
+// Interval related
+struct Interval {
+    int start;
+    int end;
+    Interval() : start(0), end(0) {}
+    Interval(int s, int e) : start(s), end(e) {}
+};
+
+ostream &operator<<(ostream &os, Interval &val){
+    os << "[" << val.start << ", " << val.end << "]";
+    return os;
 }
 
 #endif
