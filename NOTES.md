@@ -3,6 +3,9 @@
 
 ## How to analyze problemom
 ### Understand the problem
+### How to estimate the least complexity of algorithm for the problem
+I have not figured not it yet. But you could see the article [why is quicksort so quick][http://mindhacks.cn/2008/06/13/why-is-quicksort-so-quick/] first.
+
 ### Basic methods
 * Split the problem to smaller problem
   Split it to smaller problem. But how to split is also a problem. 
@@ -88,3 +91,6 @@ It is very senstive to the effective implementation of every operation, not just
 
 ## Remove Duplicates From Sorted List II
 Use a dummy node and set its member 'next' point to head. It is one of questions in my interview one year ago.
+
+## Search In Rotated Sorted Array II
+I have not figured out why linear search does not exceed the time limit!
