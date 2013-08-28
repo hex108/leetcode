@@ -26,6 +26,9 @@ Hash is very very helpful. It could save much time.
 
 e.g. Two Sum; Longest Consecutive Sequence.
 
+## How to write correct program
+Please refer to the book <<Programming Pearls>> Part I Column 4(Writing Correct Programs). Then you could understand how to set/compare low and high in quick sort and binary search algorithm.
+
 ## Tricks
 ### Fast and slow pointer
 Currently, it has been used in rotating list and checking whether a chain list is a loop, e.g. Rotate List; Remove Nth Node From End Of List.
