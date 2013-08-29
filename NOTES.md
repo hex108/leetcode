@@ -29,6 +29,10 @@ Hash is very very helpful. It could save much time.
 
 e.g. Two Sum; Longest Consecutive Sequence.
 
+### Reduce compare times
+
+e.g. Longest Common Prefix. 
+
 ## How to write correct program
 Please refer to the book <<Programming Pearls>> Part I Column 4(Writing Correct Programs). Then you could understand how to set/compare low and high in quick sort and binary search algorithm.
 
