@@ -1,0 +1,3 @@
+A star
+
+segment tree
