@@ -40,6 +40,7 @@ Currently, it has been used in rotating list and checking whether a chain list i
 It is useful when you might delete the head of a node list, e.g. Reverse Linked List II; Remove Duplicates From Sorted List II.
 
 # Specific problems
+Some problems could be tried again. e.g. Wildcard Matching. 
 
 ## Palindrome Partitioning II
 Write programe more effectively. It *matters*.
