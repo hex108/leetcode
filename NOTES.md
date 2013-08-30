@@ -29,6 +29,11 @@ Hash is very very helpful. It could save much time.
 
 e.g. Two Sum; Longest Consecutive Sequence.
 
+### heap
+maximum heap and minimum heap.
+
+e.g. Merge K Sorted Lists. 
+
 ### Reduce compare times
 
 e.g. Longest Common Prefix. 
