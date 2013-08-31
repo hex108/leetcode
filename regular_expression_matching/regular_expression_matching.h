@@ -18,9 +18,16 @@ class Solution {
         no_wild_len.resize(len);
 
         int count = 0;
+        bool has_star = false;
         for(int i = len - 1; i >= 0; i --){
-            if(p[i] != '*')
-                count ++;
+            if(p[i] != '*'){
+                if(!has_star)
+                    count ++;
+                else
+                    has_star = false;
+            }else{
+                has_star = true;
+            }
             no_wild_len[i] = count;
         }
     }
@@ -57,15 +64,19 @@ public:
                 if(no_wild_len[index] > len_s)
                     continue;
 
-                if(p[index] == '?' || p[index] == *s)
+                if(p[index] == '.' || p[index] == *s)
                     add_to_be_searched(tmp, index + 1, has_searched);
                 else if(p[index] == '*'){
-                    // case 1 : '*' is used.
-                    add_to_be_searched(tmp, index, has_searched);
-                    add_to_be_searched(tmp, index + 1, has_searched);
+                    // case 1 : the preceding element matches.
+                    to_be_matched.push_back(index - 1);
 
-                    // case 2 : '*' is not used. e.g. s = "c", p = "*?*".
+                    // case 2 : the preceding element does not match.
                     to_be_matched.push_back(index + 1);
+                }
+                
+                // e.g. aab and c*a*b, then we need skip 'c*'.
+                if(p[index] != 0 && p[index + 1] == '*'){
+                    to_be_matched.push_back(index + 2);
                 }
             }
             to_be_matched.swap(tmp);
@@ -77,7 +88,7 @@ public:
             for(size_t i = 0; i < to_be_matched.size(); i ++){
                 int index = to_be_matched[i];
 
-                if(p[index] == 0 || no_wild_len[i] == 0)
+                if(p[index] == 0 || no_wild_len[index] == 0)
                     return true;
             }
         }
@@ -85,48 +96,3 @@ public:
         return false;
     }
 };
-
-/* Exceed memory limit.
- */
-/*
-class Solution {
-public:
-    bool isMatch(const char *s, const char *p) {
-        vector<int> to_be_matched; 
-        to_be_matched.push_back(0);
-
-        while(*s && to_be_matched.size() ){
-            vector<int> tmp;
-            for(size_t i = 0; i < to_be_matched.size(); i ++){
-                int index = to_be_matched[i];
-                if(p[index] == '?' || p[index] == *s)
-                    tmp.push_back(index + 1);
-                else if(p[index] == '*'){
-                    // case 1 : '*' is used.
-                    tmp.push_back(index);  
-                    tmp.push_back(index + 1);
-
-                    // case 2 : '*' is not used. e.g. s = "c", p = "*?*".
-                    to_be_matched.push_back(index + 1);
-                }
-            }
-            to_be_matched.swap(tmp);
-            s ++;
-        }
-
-        if(*s == 0){
-            for(size_t i = 0; i < to_be_matched.size(); i ++){
-                int index = to_be_matched[i];
-
-                while(p[index] == '*')
-                    index ++;
-
-                if(p[index] == 0)
-                    return true;
-            }
-        }
-        
-        return false;
-    }
-};
-*/
