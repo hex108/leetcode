@@ -77,7 +77,7 @@ public:
             for(size_t i = 0; i < to_be_matched.size(); i ++){
                 int index = to_be_matched[i];
 
-                if(p[index] == 0 || no_wild_len[i] == 0)
+                if(p[index] == 0 || no_wild_len[index] == 0)
                     return true;
             }
         }
