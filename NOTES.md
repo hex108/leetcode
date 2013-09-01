@@ -104,3 +104,6 @@ Use a dummy node and set its member 'next' point to head. It is one of questions
 
 ## Search In Rotated Sorted Array II
 I have not figured out why linear search does not exceed the time limit!
+
+## Median Of Two Sorted Arrays
+It is a very good practice to deduce the program step by step.
