@@ -107,3 +107,6 @@ I have not figured out why linear search does not exceed the time limit!
 
 ## Median Of Two Sorted Arrays
 It is a very good practice to deduce the program step by step.
+
+## Climbing Stairs
+I have never thinked that the equation `f(n) = f(n - 1) + f(n - 2)` could be used in my program.
