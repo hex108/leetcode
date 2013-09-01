@@ -4,7 +4,7 @@
 ## How to analyze problemom
 ### Understand the problem
 ### How to estimate the least complexity of algorithm for the problem
-I have not figured not it yet. But you could see the article [why is quicksort so quick][http://mindhacks.cn/2008/06/13/why-is-quicksort-so-quick/] first.
+I have not figured not it yet. But you could see the article [why is quicksort so quick](http://mindhacks.cn/2008/06/13/why-is-quicksort-so-quick/) first.
 
 ### Basic methods
 * Split the problem to smaller problem
@@ -39,7 +39,7 @@ e.g. Merge K Sorted Lists.
 e.g. Longest Common Prefix. 
 
 ## How to write correct program
-Please refer to the book <<Programming Pearls>> Part I Column 4(Writing Correct Programs). Then you could understand how to set/compare low and high in quick sort and binary search algorithm.
+Please refer to the book <\<Programming Pearls\>> Part I Column 4(Writing Correct Programs). Then you could understand how to set/compare low and high in quick sort and binary search algorithm.
 
 ## Tricks
 ### Fast and slow pointer
