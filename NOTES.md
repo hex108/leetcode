@@ -110,3 +110,11 @@ It is a very good practice to deduce the program step by step.
 
 ## Climbing Stairs
 I have never thinked that the equation `f(n) = f(n - 1) + f(n - 2)` could be used in my program.
+
+## 3Sum
+Please note the following *error* code.
+
+    vector<int> v;
+    for(size_t i = v.size() - 1; i >= 0; i --){  // i whose type is 'size_t' will always be non-negative.
+        ...
+    }
