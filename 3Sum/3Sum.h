@@ -47,9 +47,6 @@ public:
 
             for(size_t j = i + 1; j < size;){
                 int n1 = num[i], n2 = num[j];
-                if(n1 + n2 > 0)
-                    break;
-
                 int remain = 0 - n1 - n2;
                 if(remain < n2)
                     break;
