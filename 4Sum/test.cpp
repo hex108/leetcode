@@ -67,6 +67,15 @@ int main()
         print_vector_vector(solution.fourSum(v, target));
     }
 	
+    {
+        int a[] = {-1, 2, 2, -5, 0, -1, 4};
+        vector<int> v;
+        INT_ARR_TO_VEC(v, a);
+
+        int target = 3;
+        print_vector_vector(solution.fourSum(v, target));
+    }
+	
 	
 	return 0;
 }
