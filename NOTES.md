@@ -121,3 +121,6 @@ Please note the following *error* code.
     
 ## 4Sum
 Write program very effectively and carefully. You could use `git diff` to see the difference.
+
+## Permutation Sequence
+It is a useful trick using `remain_num` in code.
