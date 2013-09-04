@@ -124,3 +124,6 @@ Write program very effectively and carefully. You could use `git diff` to see th
 
 ## Permutation Sequence
 It is a useful trick using `remain_num` in code.
+
+## Next Permutation
+Please understand what is the expected permutation first.
