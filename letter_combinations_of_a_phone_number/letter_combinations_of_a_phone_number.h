@@ -15,8 +15,11 @@ using namespace std;
 class Solution {
     void init_num_map(map<int, string> &num_to_letters){
         string str="abcdefghijklmnopqrstuvwxyz";
-        for(int i = 2; i <= 8; i ++)
+        for(int i = 2; i <= 6; i ++)
             num_to_letters[i] = str.substr((i - 2) * 3, 3);
+
+        num_to_letters[7] = str.substr(15, 4);
+        num_to_letters[8] = str.substr(19, 3);
         num_to_letters[9] = str.substr(22, 4);
     }
 
@@ -50,6 +53,11 @@ public:
                 continue;
             string letters = num_to_letters[n];
             add_letters(combinations, letters);
+        }
+
+        // The system asks for it!
+        if(combinations.size() == 0){
+            combinations.push_back("");
         }
 
         return combinations;
