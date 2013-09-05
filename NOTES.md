@@ -127,3 +127,6 @@ It is a useful trick using `remain_num` in code.
 
 ## Next Permutation
 Please understand what is the expected permutation first.
+
+## Implement StrStr
+KMP is always a little hard to write right at one time. Glibc  has another implementation in the file string/strstr.c.
