@@ -130,3 +130,6 @@ Please understand what is the expected permutation first.
 
 ## Implement StrStr
 KMP is always a little hard to write right at one time. Glibc  has another implementation in the file string/strstr.c.
+
+## Minimum Window Substring
+Use `deque` + `map`. If the question became "Given a string S and a string T, find the minimum window in S which will contain all the characters(that same characters are contained once is OK) in T in complexity O(n).", it will be more same.
