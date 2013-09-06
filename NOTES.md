@@ -19,7 +19,7 @@ I have not figured not it yet. But you could see the article [why is quicksort s
 ### Record
 Record values that need computed many times. It could change the complexity of the algorithm. If not using record, it will exceed time limit.
 
-e.g. Palindrome Palindrome II; Distinct Subsequences; Edit Distance.
+e.g. Palindrome Palindrome II; Distinct Subsequences; Edit Distance; Pow.
 
 *But* we should implement it effecively.
 e.g. Interleaving String.
@@ -133,3 +133,6 @@ KMP is always a little hard to write right at one time. Glibc  has another imple
 
 ## Minimum Window Substring
 Use `deque` and `map`. It is a little hard. If the question becomes "Given a string S and a string T, find the minimum window in S which will contain all the characters(that same characters are contained once is OK) in T in complexity O(n).", it will be more easy, using `map` is just OK.
+
+## Pow(x, n)
+Use record. Please notice corner cases: n < 0; n = -2147483648(the smallest negative int).
