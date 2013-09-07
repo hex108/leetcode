@@ -144,3 +144,6 @@ To solve this problem, I think it in a normal way first, then I try to optimize 
 
 ## Add Two Numbers
 Notice corner cases. The code `remain = l1 != NULL? l1 : l2; while(remain){...}` is bettern than the code `while(l1){...}; while(l2){...}` I wrote before.
+
+## Divide Two Integers
+Corner cases: `dividend` and `divisor` might be negative; `dividend` and `divisor` might be `-2147483648`, then `dividend = -dividend` and `divisor = -divisor` will overflow.
