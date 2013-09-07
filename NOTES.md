@@ -141,3 +141,6 @@ Use record. Please notice corner cases: n < 0; n = -2147483648(the smallest nega
 
 ## Longest Palindromic Substring
 To solve this problem, I think it in a normal way first, then I try to optimize it, I get the expected algorithm finally. Perfect idea!
+
+## Add Two Numbers
+Notice corner cases. The code `remain = l1 != NULL? l1 : l2; while(remain){...}` is bettern than the code `while(l1){...}; while(l2){...}` I wrote before.
