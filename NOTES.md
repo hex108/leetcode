@@ -1,6 +1,8 @@
 # Some thought about algorithm
 *Algorithm* is important, and *implementation* is also very important(e.g. Partition List).
 
+To solve a problem, I usually think it in a normal way first, then I try to optimize it, I get the expected algorithm finally, e.g. Longest Palindromic Substring; Median Of Two Sorted Arrays.
+
 ## How to analyze problemom
 ### Understand the problem
 ### How to estimate the least complexity of algorithm for the problem
@@ -136,3 +138,6 @@ Use `deque` and `map`. It is a little hard. If the question becomes "Given a str
 
 ## Pow(x, n)
 Use record. Please notice corner cases: n < 0; n = -2147483648(the smallest negative int).
+
+## Longest Palindromic Substring
+To solve this problem, I think it in a normal way first, then I try to optimize it, I get the expected algorithm finally. Perfect idea!
