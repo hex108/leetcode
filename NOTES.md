@@ -147,3 +147,6 @@ Notice corner cases. The code `remain = l1 != NULL? l1 : l2; while(remain){...}`
 
 ## Divide Two Integers
 Corner cases: `dividend` and `divisor` might be negative; `dividend` and `divisor` might be `-2147483648`, then `dividend = -dividend` and `divisor = -divisor` will overflow.
+
+## Generate Parentheses
+A little complex use of recurtion and record. Please see the notes of code for details.
