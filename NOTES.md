@@ -1,7 +1,7 @@
 # Some thought about algorithm
 *Algorithm* is important, and *implementation* is also very important(e.g. Partition List).
 
-To solve a problem, I usually think it in a normal way first, then I try to optimize it, I get the expected algorithm finally, e.g. Longest Palindromic Substring; Median Of Two Sorted Arrays; Container With Most Water.
+To solve a problem, I usually think it in a normal way first, then I try to optimize it, I get the expected algorithm finally, e.g. Longest Palindromic Substring; Median Of Two Sorted Arrays; Container With Most Water; Trapping Rain Water.
 
 ## How to analyze problemom
 ### Understand the problem

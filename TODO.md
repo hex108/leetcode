@@ -1,3 +1,5 @@
-A star
+* A star
 
-segment tree
+what is the difference between A star and backtracking?
+
+* segment tree
