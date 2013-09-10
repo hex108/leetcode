@@ -17,6 +17,10 @@ I have not figured not it yet. But you could see the article [why is quicksort s
 * Recursion
   After split problem, we usually use recursion if the child problem is similar to the parent problem. 
 
+* Backtracking
+  
+  e.g. Word Search. 
+
 ## How to make programe faster?
 ### Record
 Record values that need computed many times. It could change the complexity of the algorithm. If not using record, it will exceed time limit.
