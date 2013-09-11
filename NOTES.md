@@ -162,3 +162,6 @@ The problem is very special. We could put all the numbers in [0, n - 1] in right
 
 ## Combination Sum
 First sort and unique candicates.
+
+## Combination Sum II
+Deal with duplicates smartly and carefully.
