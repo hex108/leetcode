@@ -154,3 +154,8 @@ Corner cases: `dividend` and `divisor` might be negative; `dividend` and `diviso
 
 ## Generate Parentheses
 A little complex use of recurtion and record. Please see the notes of code for details.
+
+##  First Missing Positive
+1. bit sets? Not constant memory. 2. Seach the array again and again? Need O(n^2) time. If you could think out that the input array aslo could be used, you will get the answer! 
+
+The problem is very special. We could put all the numbers in [0, n - 1] in right places where `A[i] == i + 1`. Then we visit the array from the beginning again, if `A[i] != i + 1`, `A[i]` is what we want, otherwise `n + 1` is what we want.
