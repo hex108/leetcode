@@ -17,6 +17,19 @@ using namespace std;
 }
 
 template <typename T>
+void arr_of_arr_to_vec(vector<vector<T> > &v, char *a, int row, int column){
+    v.clear();
+
+    for(int i = 0; i < row; i ++){
+        vector<T> tmp;
+        for(int j = 0; j < column; j ++){
+            tmp.push_back(*(a + i * column + j));
+        }
+        v.push_back(tmp);
+    }
+}
+
+template <typename T>
 void print_vector(vector<T> v){
     cout << "["; 
 

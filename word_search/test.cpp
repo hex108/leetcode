@@ -9,18 +9,6 @@
 
 using namespace std;
 
-void arr_of_arr_to_vec(vector<vector<char> > &v, char *a, int row, int column){
-    v.clear();
-
-    for(int i = 0; i < row; i ++){
-        vector<char> tmp;
-        for(int j = 0; j < column; j ++){
-            tmp.push_back(*(a + i * column + j));
-        }
-        v.push_back(tmp);
-    }
-}
-
 int main()
 {
     Solution solution;

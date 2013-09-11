@@ -165,3 +165,6 @@ First sort and unique candicates.
 
 ## Combination Sum II
 Deal with duplicates smartly and carefully.
+
+## Valid Sudoku
+Understand the question first. Valid means filled part is valid, we need not care the empty part.
