@@ -177,3 +177,6 @@ Understand the question first. Valid means filled part is valid, we need not car
 
 ## Sudoku Solver
 Brute force.
+
+## Search Insert Position
+For Binary Search, the most important thing to remember: the end of `while(low <= high)` will always be `low == high + 1`, before the end is `low == high`, then you should choose to set `low` or `high` according to `A[mid] ? target`. According to the queston, you could set the middle `?` easily.
