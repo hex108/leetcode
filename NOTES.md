@@ -21,6 +21,12 @@ I have not figured not it yet. But you could see the article [why is quicksort s
   
   e.g. Word Search. 
 
+* Brute force
+  
+  It is a good method sometimes.
+
+  e.g. Sudoku Solver.
+
 ## How to make programe faster?
 ### Record
 Record values that need computed many times. It could change the complexity of the algorithm. If not using record, it will exceed time limit.
@@ -168,3 +174,6 @@ Deal with duplicates smartly and carefully.
 
 ## Valid Sudoku
 Understand the question first. Valid means filled part is valid, we need not care the empty part.
+
+## Sudoku Solver
+Brute force.
