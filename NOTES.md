@@ -180,3 +180,10 @@ Brute force.
 
 ## Search Insert Position
 For Binary Search, the most important thing to remember: the end of `while(low <= high)` will always be `low == high + 1`, before the end is `low == high`, then you should choose to set `low` or `high` according to `A[mid] ? target`. According to the queston, you could set the middle `?` easily.
+
+## Substring With Concatenation Of All Words
+Think it in a normal way, then optimize it in a hard way. Divide S to `element_size` parts, and search S part by part not one character by one. See notes in code for details.
+
+An important optimization is *do not do the same thing more than one time*. 
+
+e.g. for this problem, if you search S one character by one(suppose `S` is 'foobartarfoobarfoo', `L` is {"foo", "bar", "foo"}), then you will searh from the first character `f`, after "foobar" you find "tar" is not in `L`, so this search fails. You continue to search from the character 'o' after 'f' ... Then you finally search from the third character 'b', after "bar" you find "tar" is not in `L` *again*! In this two situations, you check "bar" twice and "tar" also twice. How to avoid this? Think it hard, you will get the answer.
