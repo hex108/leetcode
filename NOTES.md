@@ -58,7 +58,7 @@ Please refer to the book <\<Programming Pearls\>> Part I Column 4(Writing Correc
 Currently, it has been used in rotating list and checking whether a chain list is a loop, e.g. Rotate List; Remove Nth Node From End Of List.
 
 ### Dummy node
-It is useful when you might delete the head of a node list, e.g. Reverse Linked List II; Remove Duplicates From Sorted List II.
+It is useful when you might delete the head of a node list, e.g. Reverse Linked List II; Remove Duplicates From Sorted List II; Populating Next Right Pointers In Each Node II.
 
 # Specific problems
 Some problems could be tried again. e.g. Wildcard Matching; Longest Substring Without Repeating Characters; Populating Next Right Pointers In Each Node.
@@ -188,7 +188,10 @@ An important optimization is *do not do the same thing more than one time*.
 
 e.g. for this problem, if you search S one character by one(suppose `S` is 'foobartarfoobarfoo', `L` is {"foo", "bar", "foo"}), then you will searh from the first character `f`, after "foobar" you find "tar" is not in `L`, so this search fails. You continue to search from the character 'o' after 'f' ... Then you finally search from the third character 'b', after "bar" you find "tar" is not in `L` *again*! In this two situations, you check "bar" twice and "tar" also twice. How to avoid this? Think it hard, you will get the answer.
 
-##  Surrounded Regions
+## Surrounded Regions
 The key idea is: If the 'O' in board could not touch the boarder by surrounded 'O', it must be surrounded by 'X', otherwise it must not be.
 
 An important thing is we should write non-recursion code if it is convinient, or it might cause stack overflow(I guess). When I tested the code using recursion version on online test system, it saied "Runtime Error". It is usually because stack overflow or memory bounds.
+
+## Populating Next Right Pointers In Each Node II
+Do breadth frist visit. Because we could not use extra memory, we use the pointer 'next' in TreeLinkNode to simulate a vector.
