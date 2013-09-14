@@ -2,6 +2,7 @@
 #define TEST_H
 
 #include <iostream>
+#include <fstream>
 #include <vector>
 #include <string>
 #include <stack>
@@ -103,6 +104,49 @@ struct Interval {
 ostream &operator<<(ostream &os, Interval &val){
     os << "[" << val.start << ", " << val.end << "]";
     return os;
+}
+
+// Definition for binary tree with next pointer.
+struct TreeLinkNode {
+    int val;
+    TreeLinkNode *left, *right, *next;
+    TreeLinkNode(int x) : val(x), left(NULL), right(NULL), next(NULL) {}
+};
+
+void draw_element(TreeLinkNode *root, ofstream &os){
+    if(root == NULL)
+        return;
+
+    if(root->left)
+        os << "    " << root->val << " -> " << root->left->val << endl;
+
+    if(root->right)
+        os << "    " << root->val << " -> " << root->right->val << endl;
+
+    if(root->next)
+        os << "    " << root->val << " -> " << root->next->val << endl;
+
+    draw_element(root->left, os);
+    draw_element(root->right, os);
+}
+
+int draw_tree(TreeLinkNode *root, string filename){
+    ofstream outfile(filename.c_str());
+
+    if( !outfile ){
+        cout << "error : unable to open outputfile " << filename << endl;
+        return -1;
+    }
+
+    outfile << "digraph tree_node{" << endl;
+    outfile << "    size=\"8,5\"" << endl;
+    outfile << "    node [shape = circle];" << endl;
+    
+    draw_element(root, outfile);    
+
+    outfile << "}" << endl;
+
+    return 0;
 }
 
 #endif
