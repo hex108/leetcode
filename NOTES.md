@@ -195,3 +195,6 @@ An important thing is we should write non-recursion code if it is convinient, or
 
 ## Populating Next Right Pointers In Each Node II
 Do breadth frist visit. Because we could not use extra memory, we use the pointer 'next' in TreeLinkNode to simulate a vector.
+
+## Flatten Binary Tree To Linked List
+Preorder visit.

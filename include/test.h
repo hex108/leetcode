@@ -130,7 +130,8 @@ void draw_element(TreeLinkNode *root, ofstream &os){
     draw_element(root->right, os);
 }
 
-int draw_tree(TreeLinkNode *root, string filename){
+template<typename T>
+int draw_tree(T *root, string filename){
     ofstream outfile(filename.c_str());
 
     if( !outfile ){
@@ -147,6 +148,30 @@ int draw_tree(TreeLinkNode *root, string filename){
     outfile << "}" << endl;
 
     return 0;
+}
+
+// Definition for binary tree
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+};
+
+// Use the template function 'draw_tree': int draw_tree(T *, string).
+// And overload the function 'draw_element'
+void draw_element(TreeNode *root, ofstream &os){
+    if(root == NULL)
+        return;
+
+    if(root->left)
+        os << "    " << root->val << " -> " << root->left->val << endl;
+
+    if(root->right)
+        os << "    " << root->val << " -> " << root->right->val << endl;
+
+    draw_element(root->left, os);
+    draw_element(root->right, os);
 }
 
 #endif
