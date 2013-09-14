@@ -187,3 +187,8 @@ Think it in a normal way, then optimize it in a hard way. Divide S to `element_s
 An important optimization is *do not do the same thing more than one time*. 
 
 e.g. for this problem, if you search S one character by one(suppose `S` is 'foobartarfoobarfoo', `L` is {"foo", "bar", "foo"}), then you will searh from the first character `f`, after "foobar" you find "tar" is not in `L`, so this search fails. You continue to search from the character 'o' after 'f' ... Then you finally search from the third character 'b', after "bar" you find "tar" is not in `L` *again*! In this two situations, you check "bar" twice and "tar" also twice. How to avoid this? Think it hard, you will get the answer.
+
+##  Surrounded Regions
+The key idea is: If the 'O' in board could not touch the boarder by surrounded 'O', it must be surrounded by 'X', otherwise it must not be.
+
+An important thing is we should write non-recursion code if it is convinient, or it might cause stack overflow(I guess). When I tested the code using recursion version on online test system, it saied "Runtime Error". It is usually because stack overflow or memory bounds.
