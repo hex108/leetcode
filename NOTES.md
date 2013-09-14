@@ -55,7 +55,7 @@ Please refer to the book <\<Programming Pearls\>> Part I Column 4(Writing Correc
 
 ## Tricks
 ### Fast and slow pointer
-Currently, it has been used in rotating list and checking whether a chain list is a loop, e.g. Rotate List; Remove Nth Node From End Of List.
+Currently, it has been used in rotating list and checking whether a chain list is a loop, e.g. Rotate List; Remove Nth Node From End Of List; Convert Sorted List To Binary Search Tree.
 
 ### Dummy node
 It is useful when you might delete the head of a node list, e.g. Reverse Linked List II; Remove Duplicates From Sorted List II; Populating Next Right Pointers In Each Node II.
@@ -198,3 +198,6 @@ Do breadth frist visit. Because we could not use extra memory, we use the pointe
 
 ## Flatten Binary Tree To Linked List
 Preorder visit.
+
+## Convert Sorted List To Binary Search Tree
+Recursion. Get mid of list node using slow and fast pointer.
