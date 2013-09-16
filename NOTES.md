@@ -204,3 +204,6 @@ Recursion. Get mid of list node using slow and fast pointer.
 
 ## Recover Binary Search Tree
 The easy way to solve it is that do a in-order traversal and store the nodes into a vector, then find which two nodes are in the wrong place. Think how it works clearly(it is really very important), then think how could we implement it without vector. And I get the answer.
+
+## Subsets II
+The key point is dealing with duplicates. Please see code.
