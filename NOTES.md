@@ -34,6 +34,11 @@ e.g. Climbing Stairs; Decode Ways.
   e.g. Sudoku Solver.
 
 ## How to make programe faster?
+### Pruning
+It is used in many programs. Briefly, we need cut down alternative answer those must not be the answer. It usually appears  in the code in the form of conditional statements.
+
+e.g. Scramble String.
+
 ### Record
 Record values that need computed many times. It could change the complexity of the algorithm. If not using record, it will exceed time limit.
 
@@ -222,3 +227,6 @@ Actually it is a specific case of dynamic programming!
 ## Gray Code
 G(i) = (B(i) / 2) ^ B(i).
 http://en.wikipedia.org/wiki/Gray_code
+
+## Scramble String
+The solution uses recursion. It seems Brute Force to me. But pruning(`contain_same_charactoers` in the code) is used as an optimization. Pruning is really very useful.
