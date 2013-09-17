@@ -18,7 +18,7 @@ using namespace std;
 }
 
 template <typename T>
-void arr_of_arr_to_vec(vector<vector<T> > &v, char *a, int row, int column){
+void arr_of_arr_to_vec(vector<vector<T> > &v, T *a, int row, int column){
     v.clear();
 
     for(int i = 0; i < row; i ++){
