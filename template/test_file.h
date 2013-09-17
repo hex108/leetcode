@@ -10,6 +10,7 @@
 #include <set>
 #include <algorithm>
 #include <climits>
+#include <cmath>
 
 #include "test.h"
 using namespace std;
