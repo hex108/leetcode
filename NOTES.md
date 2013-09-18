@@ -233,3 +233,6 @@ The solution uses recursion. It seems Brute Force to me. But pruning(`contain_sa
 
 ## Maximal Rectangle
 It is a very good expand for the problem 'Largest Rectangle In Histogram'. 
+
+## Sort Colors
+Write good program.
