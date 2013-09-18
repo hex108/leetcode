@@ -188,3 +188,5 @@
 
 09/18/13 Largest Rectangle In Histogram
 
+09/18/13 Maximal Rectangle
+

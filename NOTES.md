@@ -230,3 +230,6 @@ http://en.wikipedia.org/wiki/Gray_code
 
 ## Scramble String
 The solution uses recursion. It seems Brute Force to me. But pruning(`contain_same_charactoers` in the code) is used as an optimization. Pruning is really very useful.
+
+## Maximal Rectangle
+It is a very good expand for the problem 'Largest Rectangle In Histogram'. 
