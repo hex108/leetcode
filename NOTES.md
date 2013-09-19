@@ -242,3 +242,6 @@ So many corner cases!
 
 ## Sqrt
 Perfect formula from http://en.wikipedia.org/wiki/Methods_of_computing_square_roots.
+
+## Valid Number
+[+-]?[0-9]+?.?[0-9]+?(e+?[0-9]+)?, but there is must a digit in it.
