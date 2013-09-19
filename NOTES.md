@@ -239,3 +239,6 @@ Write good program.
 
 ## Simplify Path
 So many corner cases!
+
+## Sqrt
+Perfect formula from http://en.wikipedia.org/wiki/Methods_of_computing_square_roots.

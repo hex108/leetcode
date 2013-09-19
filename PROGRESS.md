@@ -196,3 +196,5 @@
 
 09/18/13 Simplify Path
 
+09/19/13 Sqrt
+
