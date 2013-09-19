@@ -202,3 +202,5 @@
 
 09/19/13 Valid Number
 
+09/19/13 Add Binary
+
