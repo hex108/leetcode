@@ -236,3 +236,6 @@ It is a very good expand for the problem 'Largest Rectangle In Histogram'.
 
 ## Sort Colors
 Write good program.
+
+## Simplify Path
+So many corner cases!
