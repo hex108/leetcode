@@ -10,11 +10,13 @@ I have not figured not it yet. But you could see the article [why is quicksort s
 
 ### Basic methods
 * Split the problem to smaller problem
+
   Split it to smaller problem. But how to split is also a problem. 
   
   e.g. Palindrome Palindrome II.
 
 * Recursion
+
   After split problem, we usually use recursion if the child problem is similar to the parent problem. 
 
 * Backtracking
@@ -22,6 +24,7 @@ I have not figured not it yet. But you could see the article [why is quicksort s
   e.g. Word Search. 
 
 * Dynamic programming
+
   Its implementation is usually 'recursion' + 'record'.
 
   `f2 = f0 + f1` is a specific case of dynamic programming!
