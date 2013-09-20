@@ -21,11 +21,12 @@ I have not figured not it yet. But you could see the article [why is quicksort s
   
   e.g. Word Search. 
 
-* dynamic programming
+* Dynamic programming
+  Its implementation is usually 'recursion' + 'record'.
 
-`f2 = f0 + f1` is a specific case of dynamic programming!
+  `f2 = f0 + f1` is a specific case of dynamic programming!
 
-e.g. Climbing Stairs; Decode Ways.
+  e.g. Climbing Stairs; Decode Ways.
 
 * Brute force
   
