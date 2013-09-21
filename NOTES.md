@@ -252,3 +252,10 @@ Perfect formula from http://en.wikipedia.org/wiki/Methods_of_computing_square_ro
 
 ## Jump Game
 Good optimization.
+
+## Jump Game II
+We use 'record[i]' to record the smallest index that could reach last index in i steps. We need to maintain a property for 'record': record[0] > record[1] > ... > record[max_steps]
+
+e.g. if record[0 ... 3] = {8, 7, 6, 5} and max_steps = 4, then we find A[4] = 8, then we set A[0] = 4, and max_steps = 0 becuase we are searching backward, if it could reach A[5] or A[6], it must could reach A[4], there will be short steps if we choose reaching last index through A[4], so the steps after A[4] is not useful.
+
+Then we could use binary search to search record. For every A[i], we just need to search `A[i] + i` in the record, the index in `record` + 1 is the steps for A[i].
