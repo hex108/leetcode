@@ -19,14 +19,13 @@ int main()
 
         cout << solution.totalNQueens(n) << endl;
     }
-	
-    /*
+
     {
-        for(int i = 5; i < 13; i ++){
-            cout << i << " : " << solution.totalNQueens(i) << endl;
-        }
+        int n = 12;
+
+        cout << solution.totalNQueens(n) << endl;
     }
-	*/
+
     //Error test cases from leetcode.com
 	
 	return 0;

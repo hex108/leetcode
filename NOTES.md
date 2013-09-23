@@ -261,3 +261,6 @@ e.g. if record[0 ... 3] = {8, 7, 6, 5} and max_steps = 4, then we find A[4] = 8,
 Then we could use binary search to search record. For every A[i], we just need to search `A[i] + i` in the record, the index in `record` + 1 is the steps for A[i].
 
 How do I get the above solution? It is just "Think it in a normal way, then try to optimise it".
+
+## N-Queens II
+See optimization in the comments.
