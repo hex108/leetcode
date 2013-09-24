@@ -264,3 +264,6 @@ How do I get the above solution? It is just "Think it in a normal way, then try 
 
 ## N-Queens II
 See optimization in the comments.
+
+## Roman To Integer
+For the definition of roman numeral, see http://en.wikipedia.org/wiki/Roman_numeral for details.
