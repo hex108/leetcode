@@ -21,6 +21,13 @@ int main()
         cout << solution.convert(s, n) << endl;
     }
 	
+    {
+        string s = "abcdefghigklmasdfasdfasdfasdfasdf";
+        int n = 5;
+
+        cout << solution.convert(s, n) << endl;
+    }
+
     //Error test cases from leetcode.com
     {
         string s = "PAYPALISHIRING";
