@@ -267,3 +267,6 @@ See optimization in the comments.
 
 ## Roman To Integer
 For the definition of roman numeral, see http://en.wikipedia.org/wiki/Roman_numeral for details.
+
+## Anagrams
+I do not know how I figure it out, I just try and try. Hash is perfect!

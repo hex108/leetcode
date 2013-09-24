@@ -43,6 +43,20 @@ int main()
         print_vector(solution.anagrams(v));
     }
 	
+    {
+        char *a[] = {
+            "and", "dan"
+        };
+
+        vector<string> v;
+
+        for(int i = 0; i < sizeof(a) / sizeof(a[0]); i ++){
+            v.push_back(a[i]);
+        }
+
+        print_vector(solution.anagrams(v));
+    }
+	
 	
 	return 0;
 }

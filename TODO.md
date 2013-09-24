@@ -8,3 +8,4 @@ what is the difference between A star and backtracking?
 
 * Pruning (decision trees)
 
+* hash in stl

@@ -16,6 +16,38 @@
 using namespace std;
 
 class Solution {
+public:
+    vector<string> anagrams(vector<string> &strs) {
+        vector<string> anagram_strs;
+
+        map<string, int> record;
+        set<int> need_add; // avoid push_back one string many times.
+
+        for(size_t i = 0; i < strs.size(); i ++){
+            string s = strs[i]; 
+            sort(s.begin(), s.end());
+
+            if(record.count(s)){
+                anagram_strs.push_back(strs[i]);
+                /* If we push_back strs[record[s]] now, it will be push_back-ed
+                 * every time we find same anagrams. So we just use 'need_add'
+                 * to record it.
+                 */
+                need_add.insert(record[s]);
+            }else
+                record[s] = i;
+        }
+
+        set<int>::iterator it;
+        for(it = need_add.begin(); it != need_add.end(); it ++)
+            anagram_strs.push_back(strs[*it]);
+
+        return anagram_strs;
+    }
+};
+
+/* Time Limit Exceed.
+class Solution {
     vector<map<char, int> > map_record;
     vector<bool> has_been_added;
     vector<bool> has_record;
@@ -97,3 +129,4 @@ public:
         return anagram_strs;
     }
 };
+*/
