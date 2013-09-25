@@ -36,6 +36,5 @@ int main()
         cout << solution.convert(s, n) << endl;
     }
 	
-	
 	return 0;
 }
