@@ -65,6 +65,10 @@ e.g. Merge K Sorted Lists.
 
 e.g. Longest Common Prefix. 
 
+### Process data first
+
+e.g. Best Time To Buy And Sell Stock II.
+
 ## How to write correct program
 Please refer to the book <\<Programming Pearls\>> Part I Column 4(Writing Correct Programs). Then you could understand how to set/compare low and high in quick sort and binary search algorithm.
 
