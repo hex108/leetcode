@@ -9,7 +9,7 @@ I find designing algorithm is a very cool thing. I have solved some problems whi
 It will generate a directory named 'your\_program\_name' and some files in it using the template that is in directory 'template'.
 
 ### Where is questions
-I have saved questions to 'Leetcode.html'. You could also visit [Leetcode](www.leetcode.com).
+I have saved questions to 'Leetcode.html'. You could also visit [Leetcode](http://www.leetcode.com).
 
 ## Last
 Best wishes to you!
