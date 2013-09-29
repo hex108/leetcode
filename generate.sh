@@ -16,7 +16,7 @@ sed -i "s/TEST_FILE_H/$CODE_NAME\.h/" $CODE_NAME/test.cpp
 
 cp template/Makefile $CODE_NAME/Makefile
 
-REAL_NAME=$(echo $CODE_NAME | sed -e 's/_/ /g' -e 's/\b[a-z]/\U&/g' -e 's/\b2\b/II/g')
+REAL_NAME=$(echo $CODE_NAME | sed -e 's/_/ /g' -e 's/\b[a-z]/\U&/g' -e 's/\b2\b/II/g' -e 's/\b3\b/III/g')
 
 echo $(date +"%D ") $REAL_NAME >> PROGRESS.md
 echo "" >> PROGRESS.md

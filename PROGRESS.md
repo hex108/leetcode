@@ -238,3 +238,19 @@
 
 09/24/13 Multiply Strings
 
+09/29/13 Triangle
+
+09/29/13 Pascal Triangle
+
+09/29/13 Pascal Triangle II
+
+09/29/13 Best Time To Buy And Sell Stock
+
+09/29/13 Best Time To Buy And Sell Stock II
+
+09/29/13 Best Time To Buy And Sell Stock III
+
+09/29/13 Word Ladder
+
+09/29/13 Word Ladder II
+
