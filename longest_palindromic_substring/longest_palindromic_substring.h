@@ -56,5 +56,5 @@ public:
             return s.substr(start, max_len);
         else // it means there is no palindrommic string more than two letters.
             return s.substr(0, 1);
-        }
+    }
 };
