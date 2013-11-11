@@ -14,44 +14,35 @@ using namespace std;
 
 class Solution {
 public:
-    unsigned int getMax(unsigned int n1, unsigned int n2){
-        return n1 > n2? n1 : n2;
-    }
-    
     int longestConsecutive(vector<int> &num) {
+        if(num.size() == 0)
+            return 0;
+
         map<int, int> record;
-        unsigned int max = 0;
+        int max_len = 1;
 
         for(size_t i = 0; i < num.size(); i ++){
             int n = num[i];
 
-            if(record.count(n) == 0){
-                record[n] = n;
-                if(max < 1)
-                    max = 1;
-            }else{
+            if(record.count(n) != 0)
                 continue;
-            }
+            else
+                record[n] = n;
+            
+            int head = n, tail = n;
 
-            if(n != INT_MIN && record.count(n - 1)){
-                int pre_n = record[n - 1];
-                record[pre_n] = n; 
-                record[n] = pre_n;
+            if(n != INT_MIN && record.count(n - 1))
+                head = record[n - 1];
 
-                max = getMax((unsigned int)(n - pre_n + 1), max);
-            }
+            if(n != INT_MAX && record.count(n + 1))
+                tail = record[n + 1];
 
-            if(n != INT_MAX && record.count(n + 1)){
-                int next_n = record[n + 1];
-                int pre_n = record[n]; // record[n] might not be n now.
-                record[next_n] = pre_n;
-                record[pre_n] = next_n;
-
-                max = getMax((unsigned int)(next_n - pre_n + 1), max);
-            }
+            record[head] = tail;
+            record[tail] = head;
+            max_len = max(max_len, tail - head + 1);
         }
 
-        return max;
+        return max_len;
     }
 };
 
