@@ -12,6 +12,37 @@
 #include "test.h"
 using namespace std;
 
+/* An optimzation version. Another better version could be found at 
+ * https://github.com/soulmachine/leetcode/blob/master/C%2B%2B/chapStackAndQueue.tex.
+ */
+class Solution {
+public:
+    int longestValidParentheses(string s) {
+        stack<int> index;
+        int max_len = 0;
+        int start = 0; // the start index of longest valid parentheses.
+        
+        for(int i = 0; i < s.size(); i ++){
+            if(s[i] == '('){
+                index.push(i);
+            }else if(s[i] == ')'){
+                if(index.empty()){
+                    start = i + 1;
+                }else{
+                    index.pop();
+                    if(index.empty())
+                        max_len = max(i - start + 1, max_len);
+                    else
+                        max_len = max(i - index.top(), max_len);
+                }
+            }
+        }
+
+        return max_len;
+    }
+};
+
+/*
 class Solution {
 public:
     int longestValidParentheses(string s) {
@@ -52,3 +83,4 @@ public:
         return max * 2;
     }
 };
+*/
