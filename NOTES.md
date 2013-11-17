@@ -130,6 +130,8 @@ Classify every situation, e.g. m == 0, n == 0.
 ## Partition List
 It is very senstive to the effective implementation of every operation, not just complexity of algorithm.
 
+Using dummy node could simplify the implementation.
+
 ## Remove Duplicates From Sorted List II
 Use a dummy node and set its member 'next' point to head. It is one of questions in my interview one year ago.
 
@@ -276,3 +278,6 @@ For the definition of roman numeral, see http://en.wikipedia.org/wiki/Roman_nume
 
 ## Anagrams
 I do not know how I figure it out, I just try and try. Hash is perfect!
+
+## Trapping Rain Water
+There is a more concise version, the article is [I Failed a Twitter Interview](http://qandwhat.apps.runkite.com/i-failed-a-twitter-interview/). 
