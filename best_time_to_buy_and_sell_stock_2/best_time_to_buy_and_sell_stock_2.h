@@ -16,38 +16,23 @@
 using namespace std;
 
 class Solution {
-    vector<int> max;
-
-    int getMax(vector<int> &prices, int start, int end){
-        if(start >= end){
-            return 0;
-        }
-
-        int trace = start;
-
-        max[start] = 0;
-        for(int i = start + 1; i <= end; i ++){
-            if(prices[i] > prices[i - 1]){
-                max[i] = max[i - 1] + (prices[i] - prices[i - 1]);
-                trace = i;
-            }else if(prices[i] >= prices[trace]){
-                max[i] = max[i - 1] + (prices[i] - prices[trace]);
-                trace = i;
-            }else{
-                max[i] = max[i - 1];
-            }
-        }
-
-        return max[end];
-    }
-
 public:
-
     int maxProfit(vector<int> &prices) {
-        int len = prices.size();
+        if(prices.size() < 2) 
+            return 0;
 
-        max.resize(len);
+        int profit = 0;
+        for(int buy = 0; buy < prices.size() - 1;){
+            int sell = buy + 1;
+            while(sell < prices.size() && prices[sell] >= prices[sell - 1])
+                sell ++;
 
-        return getMax(prices, 0, len -1);
+            if(sell > buy + 1)
+                profit += prices[sell - 1] - prices[buy];
+
+            buy = sell;
+        }
+
+        return profit;
     }
 };
